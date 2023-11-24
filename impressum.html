@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Nov 21 2023 00:42:08 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Nov 24 2023 21:49:12 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="655bde9911b25d8d1bc19155" data-wf-site="65537cecef8410e07041d414">
 <head>
   <meta charset="utf-8">
@@ -35,5 +35,25 @@
   </section>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65537cecef8410e07041d414" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+      function sendMail(){
+        (function(){
+          emailjs.init("dy9pIs8a8XGfXrkJV"); // Account Public Key
+        })();
+        var params = {
+          name: document.querySelector("#name").value,
+          telefon: document.querySelector("#telefon").value,
+          website: document.querySelector("#website").value,
+          email: document.querySelector("#email").value,
+        };
+        var serviceID = "service_ief12pu"; // Email Service ID
+        var templateID = "template_1xaebme"; // Email Template ID
+        emailjs.send(serviceID, templateID, params)
+        .then( res => {
+            alert("Email sent successfully!!")
+        })
+        .catch();
+      }
+</script>
 </body>
 </html>
