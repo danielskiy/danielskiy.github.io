@@ -8,9 +8,9 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 $name = $_POST['name'];
-$tel = $_POST['tel'];
+$tel = $_POST['Telefon'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$message = $_POST['Website'];
 
 $mail = new PHPMailer(true);
 
