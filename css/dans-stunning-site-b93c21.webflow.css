@@ -29,7 +29,6 @@
 }
 
 .header-section {
-  height: 10vh;
   justify-content: center;
   align-items: center;
   padding-top: 10px;
@@ -379,7 +378,6 @@
 
 .logo {
   width: 300px;
-  height: 100px;
   max-width: none;
 }
 
@@ -466,8 +464,7 @@
 }
 
 .logo-header {
-  width: 313.194px;
-  height: 10vh;
+  width: 300px;
 }
 
 .impressum-section {
