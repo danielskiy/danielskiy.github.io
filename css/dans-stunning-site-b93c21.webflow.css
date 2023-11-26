@@ -3,6 +3,25 @@
   --black: black;
 }
 
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
 .body {
   color: #fff;
   text-align: center;
@@ -141,7 +160,6 @@
 }
 
 .expectation-wrapper {
-  width: 65%;
   margin-top: 80px;
   display: flex;
 }
@@ -166,6 +184,7 @@
 .expect-heading {
   color: #000;
   font-size: 24px;
+  line-height: 27px;
 }
 
 .expectations-text {
@@ -177,7 +196,7 @@
 .about-us-text {
   color: #000;
   padding-top: 20px;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
 }
 
@@ -467,6 +486,11 @@
   padding-top: 100px;
   padding-left: 140px;
   padding-right: 140px;
+}
+
+.container-2 {
+  max-width: 1200px;
+  padding: 60px 20px;
 }
 
 @media screen and (min-width: 1280px) {
