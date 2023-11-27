@@ -76,7 +76,7 @@
 
 .hero-text-wrapper {
   z-index: 5;
-  max-width: 70%;
+  max-width: 1200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@
 }
 
 .hero-text {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 35px;
 }
 
@@ -468,9 +468,7 @@
 }
 
 .impressum-section {
-  padding-top: 100px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding: 80px 140px;
 }
 
 .text-wrapper {
@@ -480,14 +478,38 @@
 }
 
 .data-section {
-  padding-top: 100px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding: 80px 140px;
 }
 
 .container-2 {
   max-width: 1200px;
   padding: 60px 20px;
+}
+
+.success-message {
+  background-color: #39b84e;
+  margin-top: 30px;
+}
+
+.error-message {
+  background-color: #e25a5a;
+}
+
+.h3_impressum {
+  font-size: 20px;
+}
+
+.h3_impressum._2 {
+  font-size: 22px;
+}
+
+.textblock_impressum {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.textblock_impressum.quelle {
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -514,6 +536,10 @@
     width: auto;
     height: 100%;
     top: 0;
+  }
+
+  .hero-text-wrapper {
+    margin-top: 60px;
   }
 
   .hero-text {
@@ -608,6 +634,7 @@
 @media screen and (max-width: 767px) {
   .hero-text-wrapper {
     max-width: 90%;
+    margin-top: 30px;
   }
 
   .hero-text {
@@ -704,6 +731,10 @@
   .logo-text.footer {
     font-size: 10px;
     line-height: 15px;
+  }
+
+  .hero-text-wrapper {
+    margin-top: 0;
   }
 
   .hero-heading {
