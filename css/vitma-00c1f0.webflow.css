@@ -7,8 +7,8 @@
   --base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>: white;
   --base-colors--dark: #1b1b1b;
   --base-colors--off-white: #f6f8fa;
-  --base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>: black;
   --background-color--background-secondary: var(--base-colors--dark);
+  --base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>: black;
   --background-color--background-alternate\<deleted\|relume-variable-background-color-4\>: var(--base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>);
   --link-color--link-alternate\<deleted\|relume-variable-link-color-3\>: var(--base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>);
   --background-color--background-success\<deleted\|relume-variable-background-color-6\>: var(--base-color-system--success-green-light\<deleted\|relume-variable-system-color-2\>);
@@ -745,67 +745,14 @@ figcaption {
   box-shadow: none;
 }
 
-.button.is-link {
-  color: var(--base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>);
-  background-color: #0000;
-  border-style: none;
-  padding: .25rem 0;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.button.is-link.is-alternate {
-  color: var(--base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>);
-  background-color: #0000;
-}
-
-.button.is-link.is-icon {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
-}
-
-.button.is-icon {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.button.is-secondary {
-  color: var(--base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>);
-  background-color: #0000;
-}
-
-.button.is-secondary.is-alternate {
-  color: var(--base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>);
-  background-color: #0000;
-}
-
 .button.is-small {
   padding: .5rem 1.25rem;
-}
-
-.button.is-small.is-icon-only {
-  padding-left: .5rem;
-  padding-right: .5rem;
 }
 
 .button.is-alternate {
   border-color: var(--base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>);
   background-color: var(--background-color--background-secondary);
   color: var(--base-colors--off-white);
-}
-
-.button.is-tertiary {
-  color: var(--base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>);
-  background-color: #0000;
-  border-color: #0000;
-}
-
-.button.is-icon-only {
-  padding-left: .75rem;
-  padding-right: .75rem;
 }
 
 .text-weight-normal {
@@ -1718,10 +1665,6 @@ figcaption {
   right: 0%;
 }
 
-.feature_lottie.small {
-  width: 50%;
-}
-
 .lottie_background-image {
   mix-blend-mode: lighten;
   width: 100%;
@@ -2086,11 +2029,6 @@ figcaption {
   position: relative;
 }
 
-.web-development {
-  width: 250px;
-  height: 250px;
-}
-
 .wrapper.nav {
   margin-left: 80px;
 }
@@ -2108,10 +2046,6 @@ figcaption {
 .spacer.hero {
   width: 150px;
   height: 150px;
-}
-
-.spacer._10px {
-  height: 10px;
 }
 
 .spacer._30px {
@@ -2472,10 +2406,6 @@ figcaption {
   text-align: left;
 }
 
-.text-block-3.left.bold {
-  font-weight: 700;
-}
-
 .text-block-3.left.bug {
   font-size: 20px;
   line-height: 35px;
@@ -2659,39 +2589,6 @@ figcaption {
 
 .subscribe-button.popup-1 {
   background-color: #0008ff;
-}
-
-.button-primary {
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  color: #fff;
-  white-space: nowrap;
-  background-image: linear-gradient(218deg, #0008ff 56%, #1779f4);
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-  height: 52px;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 14px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 162%;
-  display: inline-flex;
-}
-
-.button-icon {
-  max-width: 20px;
-  height: 20px;
-}
-
-.button-link-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.button-link-text-absolute {
-  position: absolute;
 }
 
 @media screen and (max-width: 991px) {
@@ -2930,6 +2827,10 @@ figcaption {
     height: 15rem;
   }
 
+  .lottie_background-image {
+    height: 100%;
+  }
+
   .gradient_stroke {
     width: 65%;
   }
@@ -2950,6 +2851,10 @@ figcaption {
   .process_row {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+  }
+
+  .process_lottie.bigger {
+    height: 180px;
   }
 
   .process_item {
@@ -2999,11 +2904,6 @@ figcaption {
     position: absolute;
     left: 24px;
     right: 24px;
-  }
-
-  .button-primary {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -3630,12 +3530,6 @@ figcaption {
     text-align: center;
     background-position: 247px;
     padding: 15px 34px 16px 38px;
-  }
-
-  .button-primary {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 }
 
